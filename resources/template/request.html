@@ -1,0 +1,30 @@
+	<div class="overlay" id="requestform">
+		<div>
+		<h1>make an appointment</h1>
+		<p class="close"><a href="#">X</a></p>
+		<div class="email">
+		<p>call <span>510-859-8589</span> or</p>
+		<h2>email:</h2>
+		<form method="POST" action="/tech/requestform.php" name="appointments">
+		<input type="text" placeholder="name" name="name"></input>
+		<input type="text" placeholder="email or phone number" name="reply"></input>
+		<select name="service">
+			<option value="select service type" selected>select service type</option>
+			<option value="viruses">viruses</option>
+			<option value="clean-up">clean-up</option>
+			<option value="hardware">hardware</option>
+			<option value="network">network</option>
+			<option value="upgrade">upgrade</option>
+			<option value="install">install</option>
+			<option value="data recovery">data recovery</option>
+			<option value="lessons">lessons</option>
+			<option value="windows">windows</option>
+			<option value="linux">linux</option>
+			<option value="other">other</option>
+		</select>
+		<textarea placeholder="details" name="details"></textarea>
+		<input type="submit" value="make request" class="button"/>
+		</form>
+		</div>
+		</div>
+	</div>

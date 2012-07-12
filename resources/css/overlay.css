@@ -1,0 +1,137 @@
+.overlay{
+	width: 0px;
+	height: 0px;
+	position: fixed;
+	overflow: hidden;
+	left: 0px;
+	top: 0px;
+	padding: 0px;
+	z-index: 99;
+	text-align: left;
+	background: rgb(149,149,149);
+	background: -moz-radial-gradient(center, ellipse cover, rgba(255,255,255,0.56) 0%, rgba(149,149,149,1) 100%);
+	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(255,255,255,0.56)), color-stop(100%,rgba(149,149,149,1)));
+	background: -webkit-radial-gradient(center, ellipse cover, rgba(255,255,255,0.56) 0%,rgba(149,149,149,1) 100%);
+	background: -o-radial-gradient(center, ellipse cover, rgba(255,255,255,0.56) 0%,rgba(149,149,149,1) 100%);
+	background: -ms-radial-gradient(center, ellipse cover, rgba(255,255,255,0.56) 0%,rgba(149,149,149,1) 100%);
+	background: radial-gradient(center, ellipse cover, rgba(255,255,255,0.56) 0%,rgba(149,149,149,1) 100%);
+}
+.overlay > div{
+	position: relative;
+	color: rgb(255,255,255);
+	opacity: 0;
+	filter: alpha(opacity=0); /* internet explorer */
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(opacity=0)"; /*IE8*/
+	width: 400px;
+	margin: 0px auto 0px auto;
+	-webkit-transition: opacity 0.3s linear 1.3s;
+	-moz-transition: opacity 0.3s linear 1.3s;
+	-o-transition: opacity 0.3s linear 1.3s;
+	-ms-transition: opacity 0.3s linear 1.3s;
+	transition: opacity 0.3s linear 1.3s;
+	-webkit-box-shadow: 1px 1px 4px rgba(0,0,0,0.3);
+	-moz-box-shadow: 1px 1px 4px rgba(0,0,0,0.3);
+	box-shadow: 0px 2px 7px rgba(0,0,0,0.2);
+	background-color:rgb(145, 202, 255);
+	overflow:hidden;
+}
+.overlay input,
+.overlay textarea,
+.overlay select {
+	font-family:sans-serif;
+	font-size:16px;
+	display:block;
+	margin-bottom:5px;
+}
+.overlay input {
+	width:398px;
+	background-color:#FFFFFF;
+	border:1px rgb(149,149,149) solid;
+}
+.overlay textarea {
+	width:398px;
+	margin-bottom:20px;
+	border:1px rgb(149,149,149) solid;
+}
+.overlay select {
+	background-color:#FFFFFF;
+	color:rgb(173, 169, 165);
+	border:1px rgb(149,149,149) solid;
+	width:400px;
+}
+.overlay .button {
+	background-color:#FFFFFF;
+	border:0px #000000 solid;
+	font-family:'Raleway',sans-serif;
+	color:rgb(145, 202, 255);
+	font-size:32px;
+	cursor:pointer;
+	margin-left:1px;
+	margin-bottom:5px;
+	font-weight:bold;
+}
+.overlay .close {
+	float:right;
+	margin-top:-162px;
+}
+.overlay .close a,
+.overlay .close a:visited {
+	text-decoration:none;
+	color:rgb(149,149,149);
+}
+.overlay h1{
+	font-weight:normal;
+	font-size:72px;
+	margin-bottom:20px;
+	color:#FFFFFF;
+}
+.overlay h2 {
+	font-weight:normal;
+	font-size:64px;
+	margin-top:20px;
+}
+.overlay p {
+	font-size:32px;
+}
+.overlay p span {
+	font-size:40px;
+}
+.overlay:target {
+	width: auto;
+	height: auto;
+	bottom: 0px;
+	right: 0px;
+	padding-top:90px;
+}
+.overlay:target > div{
+	-webkit-animation: fadeInScale 1.2s ease-in-out;
+	-moz-animation: fadeInScale 1.2s ease-in-out;
+	-o-animation: fadeInScale 1.2s ease-in-out;
+	-ms-animation: fadeInScale 1.2s ease-in-out;
+	animation: fadeInScale 1.2s ease-in-out;
+}
+.overlay:target > div{
+	opacity: 1;
+	filter: alpha(opacity=99); /* internet explorer */
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(opacity=99)"; /*IE8*/
+}
+@-webkit-keyframes fadeInScale {
+  0% { -webkit-transform: scale(0.6); opacity: 0; }
+  100% { -webkit-transform: scale(1); opacity: 1; }
+}
+@-moz-keyframes fadeInScale {
+  0% { -moz-transform: scale(0.6); opacity: 0; }
+  100% { -moz-transform: scale(1); opacity: 1; }
+}
+@-o-keyframes fadeInScale {
+  0% { -o-transform: scale(0.6); opacity: 0; }
+  100% { -o-transform: scale(1); opacity: 1; }
+}
+@-ms-keyframes fadeInScale {
+  0% { -ms-transform: scale(0.6); opacity: 0; }
+  100% { -ms-transform: scale(1); opacity: 1; }
+}
+@keyframes fadeInScale {
+  0% { transform: scale(0.6); opacity: 0; }
+  100% { transform: scale(1); opacity: 1; }
+}
